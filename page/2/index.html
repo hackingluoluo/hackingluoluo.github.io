@@ -1,15 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
   
 
 
-<html class="theme-next mist use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#10c998">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -27,36 +37,10 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -65,23 +49,58 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-wiluo.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-wiluo.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-wiluo.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo-wiluo.svg?v=6.0.2" color="#10c998">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
   <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
 
 
 <meta name="description" content="hackingluoluo">
@@ -96,41 +115,13 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
 
   <link rel="canonical" href="http://luor.me/page/2/"/>
 
 
-
-
-
-  <title> luor.me </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
+  <title>luor.me</title>
   
 
 
@@ -141,37 +132,70 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">luor.me</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">luor.me</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Codejoy</p>
+      
   </div>
-  <p class="site-subtitle"></p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -183,41 +207,25 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
         </li>
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
         </li>
       
 
@@ -229,9 +237,15 @@
 </nav>
 
 
+  
+
+
 
  </div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -248,21 +262,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2016/12/02/ydynbys/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2016/12/02/syst/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -270,16 +287,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/12/02/ydynbys/" itemprop="url">
-                  又到一年毕业时
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/12/02/syst/" itemprop="url">岁月神偷</a></h1>
         
 
         <div class="post-meta">
@@ -288,12 +297,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T01:41:51+08:00">
-                2016-12-02
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T02:10:51+08:00">2016-12-02</time>
             
 
+            
             
 
             
@@ -303,18 +313,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/12/02/ydynbys/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/02/ydynbys/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -325,7 +328,134 @@
       </header>
     
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
+
+      
+        
+          <p>距离上次码出来的日志已经过去了快半年了<br>半年没些日志了  趁着窗外的细雨洋洋洒洒写点这大半年的感想与所悟<br>日子过的很平淡 周而复始 就很难想着要突然顿一下停下来写总结<br>并不是说自己不喜欢过平淡重复的生活<br>只是太过沉陷和享受 难以意识到时间溜走地匆匆 一晃就是半年<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/02/syst/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2016/12/02/ydynbys/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/02/ydynbys/" itemprop="url">又到一年毕业时</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T01:41:51+08:00">2016-12-02</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -335,7 +465,7 @@
         
           <p>现在码字的时候 耳机里放着周董的新专辑<br>极力的想从每一首曲子里的每一次发音里面翻找十几年前触动心弦的一幕幕画面<br>现在听歌不像以前正襟危坐 一脸虔诚<br>也很少有能让我摇头晃脑 陶醉入神 如痴如醉的时刻<br>记得第一次从村里去城里 我还在念初中<br>顶着酷暑 在炎热的街道上逛了好久<br>最后走进一家门口贴满海报 音响声音稍小的音像店里<br>颤颤巍巍的站在柜台边 望着里面玲琅满目的歌手卡带专辑像学校图书馆的架子书一样正摆的整齐<br>又挪到另一面墙前站好 抬头望向每一张专辑CD的封面 贪婪的似乎想将他们都印在自己连荷塘月色都记不住的脑子里<br>可笑的是 那时候的我连CD和DVD都分不清楚<br>盯着CD专辑右下角那触目惊心几十块钱的价格 以CD不能在自己碟机里面播放为由 说服自己慢慢放回去<br>还是乖乖的趴在自己能够着的卡带柜台前面 挑了一张朴树的《生如夏花》<br>那张专辑里面的歌词 不像村里贩卖的盗版卡带里面翻不到几遍字就灰飞烟灭<br>还有那手感像牛皮纸一样卡代壳外面的盒子<br>如今想起来还那么的有手感<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/12/02/ydynbys/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -344,17 +474,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -364,6 +496,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -376,21 +512,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2016/12/02/middle-night/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2016/12/02/middle-night/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -398,16 +537,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/12/02/middle-night/" itemprop="url">
-                  我二十六岁的夏天
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/12/02/middle-night/" itemprop="url">我二十六岁的夏天</a></h1>
         
 
         <div class="post-meta">
@@ -416,12 +547,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T00:44:44+08:00">
-                2016-12-02
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T00:44:44+08:00">2016-12-02</time>
             
 
+            
             
 
             
@@ -431,18 +563,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/12/02/middle-night/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/02/middle-night/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -453,7 +578,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -463,7 +590,7 @@
         
           <p>距离上篇日志又匆匆的过去了两个半月<br>我似乎都不怎么记得7月的日子是怎么开始的<br>只是每天起来都会盯着日历瞅一会<br>那些每天都在更迭变化的数字 能让我感受到每天的不同<br>感受到历史的车轮还一直在向前驶去<br>我像个陀螺般在北京城里转来覆去<br>穿梭在连接高楼与广厦的公路上<br>看路旁的桐树从稀疏到茂密 雾霾从多到少<br>看一幢幢建筑将落日和远山遮挡吞没<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/12/02/middle-night/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -472,17 +599,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -492,6 +621,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -504,21 +637,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2011/02/10/一个人的张灯结彩/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2011/02/10/一个人的张灯结彩/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -526,16 +662,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2011/02/10/一个人的张灯结彩/" itemprop="url">
-                  一个人的张灯结彩......
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/02/10/一个人的张灯结彩/" itemprop="url">一个人的张灯结彩......</a></h1>
         
 
         <div class="post-meta">
@@ -544,12 +672,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-02-10T23:08:00+08:00">
-                2011-02-10
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-02-10T23:08:00+08:00">2011-02-10</time>
             
 
+            
             
 
             
@@ -559,18 +688,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2011/02/10/一个人的张灯结彩/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2011/02/10/一个人的张灯结彩/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -581,7 +703,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -592,7 +716,7 @@
           <p>考试已毕的某个夜晚,宿舍里孤独的要发飚的在下已经提笔写下了这个题目　　　　<br>为了壮吾之小胆,遂把九度以助兴,略带趋鬼的意思吧…<br>可被妖魔鬼怪各路神仙高的心烦意乱 hoho!<br>每每不能提笔便进入状态,一拖便跨过了2010年.</p>
 <p>考试完了之后因为学校有点事情要做，就毅然决然地呆了一个星期 哈<br>java考完的一个不温不火的中午，龙龙和蚌蚌就以迅雷般的速度搭上了离开西安的高铁<br>宿舍四个人就放开了玩dota，神马都不想，比往常更加集中精力，比往常更加重视…<br>但那天下午的几场data比以往任何一场都没有感觉,世界之树倒塌的那一刻像如释重负似的<br>那天下午哥几个的眼神有点飘忽….<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2011/02/10/一个人的张灯结彩/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -601,17 +725,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -621,6 +747,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -633,21 +763,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2011/01/01/萧瑟秋风今又是/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2011/01/01/萧瑟秋风今又是/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -655,16 +788,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2011/01/01/萧瑟秋风今又是/" itemprop="url">
-                  萧瑟秋风今又是,换了人间....
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/01/01/萧瑟秋风今又是/" itemprop="url">萧瑟秋风今又是,换了人间....</a></h1>
         
 
         <div class="post-meta">
@@ -673,12 +798,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-01-01T23:01:00+08:00">
-                2011-01-01
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-01-01T23:01:00+08:00">2011-01-01</time>
             
 
+            
             
 
             
@@ -688,18 +814,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2011/01/01/萧瑟秋风今又是/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2011/01/01/萧瑟秋风今又是/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -710,7 +829,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -721,7 +842,7 @@
           <p>一零年的最后一个月<br>温度越来越冷的日子里<br>保持懒散<br>这最后的一个月 让头发乱一会…..</p>
 <p>五亩苍烟，一丘寒碧，岁晚忧风雪….<br>今日陪同学去赛格买东西 各种冷<br>我的毛衣终以寡不敌众败下阵来 于是我就–<br>透彻心骨的冷<br>适才发现&lt;大家闺秀&gt;并不是林俊杰创作的 我一直认为&lt;大家闺秀&gt;是他的  汗!<br>这是还得从很多年前开始…..<br>那是个充满温馨和睦的岁月 那时我还小小的默默地上着初中 节奏是严肃认真 团结活泼…HOHO!<br>我有一台复读机 于是那时的我比别人幸福点<br>每天晚上我都很huaistion地一边听着盗版或者打口磁带一边趴在床边写写画画,信笔涂鸦…..<br>遂 在下对自己的磁带很有感情<br>我有一盘林俊杰&lt;江南&gt;的盗版专辑 于是每当我听到&lt;江南&gt;里的歌曲时总会唏嘘不已…<br>那盘陪伴我多少个夜晚的&lt;江南&gt;里有一首&lt;大家闺秀&gt;鄙人甚是喜欢<br>近日心血来潮想’复古’一些 在网上找到它竟然不是林俊杰的歌 遂为之悍然<br>不过也不奇怪 毕竟是盗版…..哈<br>于是 少有适俗韵….<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2011/01/01/萧瑟秋风今又是/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -730,17 +851,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -750,6 +873,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -762,21 +889,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/12/10/Long-time-no-see/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2010/12/10/Long-time-no-see/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -784,16 +914,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2010/12/10/Long-time-no-see/" itemprop="url">
-                  Long time no see
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/12/10/Long-time-no-see/" itemprop="url">Long time no see</a></h1>
         
 
         <div class="post-meta">
@@ -802,12 +924,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-12-10T21:13:00+08:00">
-                2010-12-10
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-12-10T21:13:00+08:00">2010-12-10</time>
             
 
+            
             
 
             
@@ -817,18 +940,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/12/10/Long-time-no-see/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/12/10/Long-time-no-see/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -839,7 +955,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -849,7 +967,7 @@
         
           <p>肃穆的下午<br>在下没去上课  不是颓废,还是什么…<br>整个下午整个人突然有种无所适从的空洞并且压抑着的感觉<br>面对’小黑’突然无所适从  仿佛我被这个世界突然抽离<br>想去吃’一真楼’的水盆羊肉<br>想去买’泰格斯’的IBM精英专用电脑包<br>想去电玩巴士买PSP<br>想去买切尔西的主场卫衣虽然我不算不上足球迷<br>想去感受感受5000块的HIFIMAN的音效是不是能把我醉倒<br>奥 这是个关于理想的下午<br>也许我很’山炮’…..HOHO！<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2010/12/10/Long-time-no-see/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -858,17 +976,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -878,6 +998,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -890,21 +1014,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/27/我又不是很想你/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/27/我又不是很想你/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -912,16 +1039,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2010/11/27/我又不是很想你/" itemprop="url">
-                  我又不是很想你
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/11/27/我又不是很想你/" itemprop="url">我又不是很想你</a></h1>
         
 
         <div class="post-meta">
@@ -930,12 +1049,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-27T22:11:00+08:00">
-                2010-11-27
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-27T22:11:00+08:00">2010-11-27</time>
             
 
+            
             
 
             
@@ -945,18 +1065,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/11/27/我又不是很想你/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/11/27/我又不是很想你/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -967,7 +1080,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -977,7 +1092,7 @@
         
           <p>冬日里掠过的寒风阵阵<br>气候干燥着这个脆弱的世界,这个脆弱世界里的愈加枯燥的一群一群暴走之人….<br>那风不甚肆虐<br>可形销骨立的我却总是被它折磨得唇干皮裂      最后血流不止而亡…HOHO!<br>在孱弱的在下眼里<br>冬天没有颜色<br>用一壶茶 泡起一生的光阴 在那样香气弥漫的世界里  且听风吟……<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2010/11/27/我又不是很想你/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -986,17 +1101,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1006,6 +1123,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1018,21 +1139,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/12/当我还看鼠皮玉人的时候/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/12/当我还看鼠皮玉人的时候/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -1040,16 +1164,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2010/11/12/当我还看鼠皮玉人的时候/" itemprop="url">
-                  当我还看<鼠皮玉人>的时候.......
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/11/12/当我还看鼠皮玉人的时候/" itemprop="url">当我还看<鼠皮玉人>的时候.......</a></h1>
         
 
         <div class="post-meta">
@@ -1058,12 +1174,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-12T23:54:00+08:00">
-                2010-11-12
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-12T23:54:00+08:00">2010-11-12</time>
             
 
+            
             
 
             
@@ -1073,18 +1190,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/11/12/当我还看鼠皮玉人的时候/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/11/12/当我还看鼠皮玉人的时候/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -1095,7 +1205,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1106,7 +1218,7 @@
           <p>在下透过干净的窗户  目光所及<br>月色正浓…<br>这空灵的夜晚 我会做些什么呢…<br>至少我拥有夜晚  HOHO!</p>
 <p>前几天给老吴说过<br>趁现在年轻 多看几本小说或者重复听几首纯粹的歌<br>这样在年老的时候再去看这些章节或者听到如此音符  也许想到小说或歌曲的名字<br>就会让你的心再回到过去,年轻年轻…<br>&lt;鼠皮玉人&gt;便是这样被我想了又想的一部小说<br>那时候<br>我还高二  高二刚开学<br>老迟到的我,烦躁的气氛,运动会,周杰伦的新专辑,氤氲的天气,新结识的衰友…..<br>厄   还有某某某…<br>岁月能够侵蚀的只是我的外衣  无他…<br>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2010/11/12/当我还看鼠皮玉人的时候/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -1115,17 +1227,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1135,6 +1249,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1147,21 +1265,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/06/老男孩/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2010/11/06/老男孩/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -1169,16 +1290,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2010/11/06/老男孩/" itemprop="url">
-                  老男孩 我的多少度青春
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/11/06/老男孩/" itemprop="url">老男孩 我的多少度青春</a></h1>
         
 
         <div class="post-meta">
@@ -1187,12 +1300,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-06T18:58:00+08:00">
-                2010-11-06
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-06T18:58:00+08:00">2010-11-06</time>
             
 
+            
             
 
             
@@ -1202,18 +1316,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/11/06/老男孩/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/11/06/老男孩/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -1224,7 +1331,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1236,7 +1345,7 @@
 </blockquote>
 <p>梦想这东西和经典一样，只会越来越珍贵</p>
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2010/11/06/老男孩/#more" rel="contents">
               Read more &raquo;
             </a>
@@ -1245,17 +1354,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1265,6 +1376,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1277,21 +1392,24 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/10/24/是谁应了路远马亡/">
+  
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luor.me/2010/10/24/是谁应了路远马亡/">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luor.me">
+    </span>
 
     
       <header class="post-header">
@@ -1299,16 +1417,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2010/10/24/是谁应了路远马亡/" itemprop="url">
-                  是谁应了路远马亡、各安天涯，终是一晌贪欢........
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/10/24/是谁应了路远马亡/" itemprop="url">是谁应了路远马亡、各安天涯，终是一晌贪欢........</a></h1>
         
 
         <div class="post-meta">
@@ -1317,12 +1427,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-24T17:47:00+08:00">
-                2010-10-24
-              </time>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-24T17:47:00+08:00">2010-10-24</time>
             
 
+            
             
 
             
@@ -1332,18 +1443,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/10/24/是谁应了路远马亡/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/10/24/是谁应了路远马亡/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
-
           
+
           
 
           
@@ -1354,7 +1458,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1373,17 +1479,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1393,135 +1501,10 @@
         <div class="post-eof"></div>
       
     </footer>
-  </article>
-
-
-    
-      
-
-  
-
+  </div>
   
   
   
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://luor.me/2010/10/16/那就这样吧/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="luoluo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="luor.me">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="luor.me" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2010/10/16/那就这样吧/" itemprop="url">
-                  那就这样吧
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-16T14:22:00+08:00">
-                2010-10-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2010/10/16/那就这样吧/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2010/10/16/那就这样吧/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>前几天的冷雨让我很受用<br>上高二时看过一篇让人销魂的散文<br>描述的是雅安的雨  雨镇的那些丝丝氤氲 百转千回的缠绵<br>奉为经典 却忘了题目<br>奋力翻找过那本书，却已遗失在茫茫  不复了<br>听听那冷雨  让我冷静的思考思考…..</p>
-<p>把think的原装系统格了<br>并不是不喜欢  只是有些服务在基础版上没有开放<br>果断上旗舰….<br>小黑的蓝键也不能用了<br>总该舍弃些东西……本来人生就是选择，HOHO！<br>
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2010/10/16/那就这样吧/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </article>
 
 
@@ -1538,9 +1521,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -1554,57 +1534,88 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
-               alt="luoluo" />
-          <p class="site-author-name" itemprop="name">luoluo</p>
-          <p class="site-description motion-element" itemprop="description">hackingluoluo</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">37</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avtar.png"
+                alt="luoluo" />
+            
+              <p class="site-author-name" itemprop="name">luoluo</p>
+              <p class="site-description motion-element" itemprop="description">hackingluoluo</p>
           </div>
 
           
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hackingluoluo" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.douban.com/people/hackingluoluo/" target="_blank" title="豆瓣">
+                      
+                        <i class="fa fa-fw fa-globe"></i>豆瓣</a>
+                  </span>
+                
             </div>
           
 
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
           
+          
+
+          
+          
+
+          
+            
+          
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
+
+      
 
       
 
@@ -1618,38 +1629,52 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">luoluo</span>
+
+  
+
+  
 </div>
 
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.2</div>
+
+
 
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
@@ -1668,75 +1693,15 @@
 
 
 
-  
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"luor"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
 
 
 
@@ -1747,6 +1712,80 @@
 
   
   
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.2"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   
 
@@ -1756,6 +1795,17 @@
 
   
 
+
+  
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
