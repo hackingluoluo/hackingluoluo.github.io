@@ -269,6 +269,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wiluo.com/2019/01/18/开发环境搭建/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luoluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avtar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wiluo.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/18/开发环境搭建/" itemprop="url">开发环境搭建</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-18T17:39:03+08:00">2019-01-18</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="neovim-4-0-1-install"><a href="#neovim-4-0-1-install" class="headerlink" title="neovim(4.0.1) install"></a>neovim(4.0.1) install</h2><ol>
+<li><p>Download </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage</div><div class="line"></div><div class="line">chmod u+x nvim.appimage </div><div class="line"></div><div class="line">./nvim.appimage</div></pre></td></tr></table></figure>
+</li>
+<li><p>Support python</p>
+<ol>
+<li>curl <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a> -o get-pip.py</li>
+<li>sudo python2.7 get-pip.py</li>
+<li>sudo python3 get-pip.py</li>
+<li>_usr_bin/pip2.7 install neovim</li>
+<li>_usr_bin/pip3 install neovim</li>
+</ol>
+</li>
+<li><p>运行 ::checkhealth provider:: 检查python是否安装成功</p>
+<ol>
+<li>如果还没有成功 则运行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo yum install python-neovim</div><div class="line">sudo yum install python3-neovim</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>配置nvim inint.vim 引导初始化配置文件<br>touch  ~_.config_nvim/init.vim</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">set runtimepath^=~/.vim runtimepath+=~/.vim/after</div><div class="line">let &amp;packpath = &amp;runtimepath</div><div class="line">let g:clipboard = &#123;</div><div class="line">      \   &apos;name&apos;: &apos;myClipboard&apos;,</div><div class="line">      \   &apos;copy&apos;: &#123;</div><div class="line">      \      &apos;+&apos;: &apos;tmux load-buffer -&apos;,</div><div class="line">      \      &apos;*&apos;: &apos;tmux load-buffer -&apos;,</div><div class="line">      \    &#125;,</div><div class="line">      \   &apos;paste&apos;: &#123;</div><div class="line">      \      &apos;+&apos;: &apos;tmux save-buffer -&apos;,</div><div class="line">      \      &apos;*&apos;: &apos;tmux save-buffer -&apos;,</div><div class="line">      \   &#125;,</div><div class="line">      \   &apos;cache_enabled&apos;: 1,</div><div class="line">      \ &#125;</div><div class="line">source ~/.vimrc</div></pre></td></tr></table></figure>
+</li>
+</ol>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/18/开发环境搭建/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://wiluo.com/2018/02/05/end-of-2017/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1397,134 +1544,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wiluo.com/2016/12/02/coroutine/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="luoluo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avtar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wiluo.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/12/02/coroutine/" itemprop="url">关于php协程的一些个人思考</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T02:38:45+08:00">2016-12-02</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><h3 id="swoole2-0-协程"><a href="#swoole2-0-协程" class="headerlink" title="swoole2.0 协程"></a>swoole2.0 协程</h3><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><blockquote>
-<p>协程一共有三种状态：休眠（挂起）、运行和停止。同一个线程下的协程依次使用CPU，每次只有一个协程处于运行状态，而其他协程处于休眠态。工程师可以在协程执行过程中某一位置进行打断，此时协程交出控制权并进入到休眠状态，当控制权再次回到此协程时，将从刚才被打断的位置继续执行。</p>
-</blockquote>
-<p><img src="https://ooo.0o0.ooo/2016/11/14/58297b84130b7.png" alt="system.png"></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/12/02/coroutine/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1576,7 +1595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1645,7 +1664,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
