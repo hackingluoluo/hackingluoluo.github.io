@@ -100,41 +100,50 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="system," />
 
 
-<meta name="description" content="快5点了,还是没有睡意,HOHO！
-浏览了啸雷的博客，各种感慨涌上心头，十分强烈~
-还能回忆起高考完之后的那个暑假的种种。。。那时侯与吾弟纠结于他的小窝中，我上C的班，他补课。问题集中在了
-温度上。挺犀利的，以至于我都不敢回想那时的温度！就是靠啸雷和祥子下午七点的《快乐旅行》让我能感到一丝凉意。
-啸雷，挺敬佩你的！力挺你的生活态度~">
+<meta name="description" content="在zsh shell下面，ls的配色显示管理由 .oh-my-zsh/lib/theme-and-appearance.zsh配置
+ls 分别有两种程序：
+mac os 自带的 /bin/ls
+GNU coreutiles 套件中的 gls
+
+
+在 .zshrc  里面将 $LSCOLORS  配置好之后 ls 会alias为 ls -G
+在 .zshrc  里面将 $LS_COLORS  配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="啸雷君，加嘞个油~~~~">
-<meta property="og:url" content="http://wiluo.com/2010/07/13/啸雷君/index.html">
+<meta property="og:title" content="Zsh ls config">
+<meta property="og:url" content="http://wiluo.com/2019/01/21/zsh-ls-config/index.html">
 <meta property="og:site_name" content="wiluo.com">
-<meta property="og:description" content="快5点了,还是没有睡意,HOHO！
-浏览了啸雷的博客，各种感慨涌上心头，十分强烈~
-还能回忆起高考完之后的那个暑假的种种。。。那时侯与吾弟纠结于他的小窝中，我上C的班，他补课。问题集中在了
-温度上。挺犀利的，以至于我都不敢回想那时的温度！就是靠啸雷和祥子下午七点的《快乐旅行》让我能感到一丝凉意。
-啸雷，挺敬佩你的！力挺你的生活态度~">
-<meta property="og:updated_time" content="2016-12-27T20:03:02.000Z">
+<meta property="og:description" content="在zsh shell下面，ls的配色显示管理由 .oh-my-zsh/lib/theme-and-appearance.zsh配置
+ls 分别有两种程序：
+mac os 自带的 /bin/ls
+GNU coreutiles 套件中的 gls
+
+
+在 .zshrc  里面将 $LSCOLORS  配置好之后 ls 会alias为 ls -G
+在 .zshrc  里面将 $LS_COLORS  配置">
+<meta property="og:updated_time" content="2019-01-21T11:42:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="啸雷君，加嘞个油~~~~">
-<meta name="twitter:description" content="快5点了,还是没有睡意,HOHO！
-浏览了啸雷的博客，各种感慨涌上心头，十分强烈~
-还能回忆起高考完之后的那个暑假的种种。。。那时侯与吾弟纠结于他的小窝中，我上C的班，他补课。问题集中在了
-温度上。挺犀利的，以至于我都不敢回想那时的温度！就是靠啸雷和祥子下午七点的《快乐旅行》让我能感到一丝凉意。
-啸雷，挺敬佩你的！力挺你的生活态度~">
+<meta name="twitter:title" content="Zsh ls config">
+<meta name="twitter:description" content="在zsh shell下面，ls的配色显示管理由 .oh-my-zsh/lib/theme-and-appearance.zsh配置
+ls 分别有两种程序：
+mac os 自带的 /bin/ls
+GNU coreutiles 套件中的 gls
+
+
+在 .zshrc  里面将 $LSCOLORS  配置好之后 ls 会alias为 ls -G
+在 .zshrc  里面将 $LS_COLORS  配置">
 
 
 
 
 
 
-  <link rel="canonical" href="http://wiluo.com/2010/07/13/啸雷君/"/>
+  <link rel="canonical" href="http://wiluo.com/2019/01/21/zsh-ls-config/"/>
 
 
-  <title>啸雷君，加嘞个油~~~~ | wiluo.com</title>
+  <title>Zsh ls config | wiluo.com</title>
   
 
 
@@ -281,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wiluo.com/2010/07/13/啸雷君/">
+    <link itemprop="mainEntityOfPage" href="http://wiluo.com/2019/01/21/zsh-ls-config/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="luoluo">
@@ -298,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">啸雷君，加嘞个油~~~~</h1>
+          <h1 class="post-title" itemprop="name headline">Zsh ls config</h1>
         
 
         <div class="post-meta">
@@ -310,7 +319,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-07-13T05:10:00+08:00">2010-07-13</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-21T19:41:58+08:00">2019-01-21</time>
             
 
             
@@ -347,35 +356,16 @@
       
 
       
-        <p>快5点了,还是没有睡意,HOHO！</p>
-<p>浏览了啸雷的博客，各种感慨涌上心头，十分强烈~</p>
-<p>还能回忆起高考完之后的那个暑假的种种。。。那时侯与吾弟纠结于他的小窝中，我上C的班，他补课。问题集中在了</p>
-<p>温度上。挺犀利的，以至于我都不敢回想那时的温度！就是靠啸雷和祥子下午七点的《快乐旅行》让我能感到一丝凉意。</p>
-<p>啸雷，挺敬佩你的！力挺你的生活态度~<br><a id="more"></a></p>
-<p>想想这么多年（也就不到两年，hoho）以来,陪我度过靡靡岁月的杨凯，刘昕，祥子，啸雷，付星而如今已天各一方，物非人是，生活，有时很不公平~</p>
-<p>我怀念有关那个时候的种种，也只能 怀念~</p>
-<p>啸雷的几句话让我很受用，妄且自勉！</p>
-<p>“讨厌吵闹 讨厌肤浅 讨厌没文化的恶俗</p>
-<p>讨厌夜店里的丝袜女人和夜店门口的山寨男</p>
-<p>讨厌表里不一</p>
-<p>讨厌道貌岸然</p>
-<p>讨厌物质拜金</p>
-<p>讨厌假小子和娘炮</p>
-<p>讨厌自己变得没有以前那么乐于去解释</p>
-<p>讨厌和一群志不同道不合的人坐在一起尴尬</p>
-<p>我们可以为自己的梦想去蹉跎岁月</p>
-<p>但绝不能为他人的欲望去浪费青春</p>
-<p>千万不要有了奴性</p>
-<p>否则</p>
-<p>无论你是著名还是非著名</p>
-<p>在人生与原则的战场上</p>
-<p>你都已经成了一个傀儡</p>
-<p>我想要的</p>
-<p>只是一日三餐都能大块吃肉大口喝冰峰的豪爽日子</p>
-<p>没有那些俗套世故的礼仪讲究</p>
-<p>只有和朋友一起大快朵颐时</p>
-<p>兴高采烈骂天骂地的舒坦劲</p>
-<p>”</p>
+        <ol>
+<li>在zsh shell下面，ls的配色显示管理由 <code>.oh-my-zsh/lib/theme-and-appearance.zsh</code>配置</li>
+<li>ls 分别有两种程序：<ol>
+<li>mac os 自带的 <code>/bin/ls</code></li>
+<li>GNU coreutiles 套件中的 gls</li>
+</ol>
+</li>
+<li>在 <code>.zshrc</code>  里面将 <code>$LSCOLORS</code>  配置好之后 ls 会alias为 <code>ls -G</code></li>
+<li>在 <code>.zshrc</code>  里面将 <code>$LS_COLORS</code>  配置好之后 ls 会alias为 <code>gls —color=tty</code> </li>
+</ol>
 
       
     </div>
@@ -391,6 +381,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/system/" rel="tag"># system</a>
+          
+        </div>
+      
 
       
       
@@ -400,8 +396,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2010/06/01/西乔-神秘的程序员们/" rel="next" title="西乔-神秘的程序员们">
-                <i class="fa fa-chevron-left"></i> 西乔-神秘的程序员们
+              <a href="/2019/01/18/开发环境搭建/" rel="next" title="开发环境搭建">
+                <i class="fa fa-chevron-left"></i> 开发环境搭建
               </a>
             
           </div>
@@ -409,10 +405,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2010/08/09/果断低调地生存/" rel="prev" title="果断低调地生存,___________果断标题要长">
-                果断低调地生存,___________果断标题要长 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
